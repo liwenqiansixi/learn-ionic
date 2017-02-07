@@ -1,0 +1,23 @@
+<ion-view view-title="Chats" cache-view="false">
+  <ion-list>
+    <ion-item>1
+      <ion-option-button class="energized-bg">已读</ion-option-button>
+      <ion-option-button class="royal-bg">置顶</ion-option-button>
+    </ion-item>
+    <ion-item>
+      选择框的选中状态是：{{checkbox1}}
+      <ion-checkbox ng-model="checkbox1">中国</ion-checkbox>
+    </ion-item>
+    <ion-item>
+      单选按钮的选中值是：{{choice.choice}}
+      <ion-radio ng-repeat="item in radioList" ng-model="choice.choice" ng-value="item.value">{{item.name}}</ion-radio>
+    </ion-item>
+    <ion-item>4
+      开发的闭合状态是:{{kg}}
+      <ion-toggle ng-model="kg">开关</ion-toggle>
+    </ion-item>
+    <ion-item>5</ion-item>
+    <ion-item>6</ion-item>
+    <ion-item>7</ion-item>
+  </ion-list>
+</ion-view>
